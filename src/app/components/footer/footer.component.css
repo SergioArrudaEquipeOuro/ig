@@ -1,0 +1,79 @@
+.leiaut{
+    background: #252525;
+    min-height: 200px;
+    color: #fff;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.divisor{
+    margin: 20px 0;
+}
+.divisor .divisor1{
+    height: 2px;
+    width: 40px;
+    background: #636363;
+    margin-bottom: 5px;
+}
+.divisor .divisor2{
+    height: 2px;
+    width: 70px;
+    background: #636363;
+    
+}
+.box{
+    padding: 30px;
+    max-width: 250px;
+}
+
+.box2 .texto p{
+    color: #F7A815;
+    cursor: pointer;
+}
+.box2 .texto p:hover{
+    color: #fea653;
+}
+.btn button{
+    background: #F7A815;
+    color: #252525;
+    border: none;
+    font-weight: bolder;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn button:hover{
+    background: #616161;
+    color: #fff;
+}
+.lista{
+    display: flex;
+    list-style: none;
+    margin: 15px 0;
+}
+
+.lista li:hover{
+    background: #F7A815;
+    border-radius: 5px;
+}
+
+.container2{
+    background: #191919;
+    padding: 10px 0;
+}
+
+.container2 p{
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+}

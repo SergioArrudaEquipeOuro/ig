@@ -1,0 +1,211 @@
+.leiaut-container{
+    display: flex;
+    justify-content: center;
+    max-width: 1800px;
+   margin: auto;
+}
+
+#container {
+    width: 100%;
+    margin: 0 auto;
+    
+    backdrop-filter: blur(40px);
+    align-items: center;
+    padding: 10px;
+   
+    
+    background:  #2E2E2E;
+   
+    max-width: 1800px;
+}
+#botao{
+    align-items: center;
+    margin-left: 50px;
+}
+#botao p:hover{
+   
+}
+.menu-hamburguer{
+    display: none;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+.menu .logo img {
+    height: 50px;
+    width: auto;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.menu .menus {
+    display: flex;
+}
+
+.menu .menu-item {
+    position: relative;
+}
+
+.menu {
+    height: 50px;
+}
+
+.menu .menu {
+    cursor: pointer;
+    margin: 0 10px;
+    font-size: 17px;
+}
+
+.menu .btn {
+    display: flex;
+    margin: 0 10px;
+}
+
+.menu .btn .divisor {
+    height: 20px;
+    width: 1px;
+    background: #fff;
+    margin: 0 20px;
+}
+
+.menu .menu:hover,
+.menu .btn p:hover {
+    cursor: pointer;
+
+}
+
+.menu .submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 250px;
+    padding: 20px 0;
+    background:  #373737;
+    border-radius: 0 0 20px 20px;
+    backdrop-filter: blur(40px);
+}
+
+.menu .menu-item:hover .submenu {
+    display: block;
+}
+
+.menu .submenu p {
+    padding: 15px 5px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.menu .submenu p:hover {
+    box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.5);
+}
+
+.btn-register{
+    background: #F7A815;
+    padding: 10px;
+    border-radius: 50px;
+    color: #2E2E2E;
+    margin: 0 20px;
+}
+.btn-register:hover{
+    background: #ffb732;
+}
+
+@media screen and (max-width: 1100px) {
+    .menu-hamburguer {
+        display: block;
+        margin: 10px;
+        cursor: pointer;
+    }
+    .icon {
+        font-size: 30px;
+    }
+    #botao{
+        display: flex;
+        margin-left: 0px;
+        justify-content: center;
+        border: none;
+    }
+    #botao p{
+        font-size: 25px;
+        padding: 20px 0;
+    }
+    .logo {
+        position: absolute;
+        left: 50%;
+        right: 50%;
+    }
+    .menu-item {
+        display: block;
+    }
+
+    .menus {
+        max-height: 0;
+        overflow: hidden;
+        visibility: hidden; /* Use visibility para ocultar o elemento */
+        transition: max-height 0.3s ease, visibility 0s ease 0.3s; /* Adicione a transição de visibilidade */
+        flex-direction: column;
+    }
+
+    .menus-on {
+        position: absolute;
+        left: 0;
+        top: 85px;
+        width: 100%;
+        background: #515151;
+        backdrop-filter: blur(40px);
+        border-radius: 8px;
+        visibility: visible; /* Use visibility para exibir o elemento */
+        transition: max-height 0.3s ease, visibility 0s ease; /* Adicione a transição de visibilidade */
+        max-height: 500px;
+        padding: 0 30px;
+    }
+
+    .menu .submenu {
+        
+        position: none;
+        top: 0px;
+        left: 0;
+        width: 0%;
+        padding: 5px 0;
+        background: #515151;
+        border-radius: 0 0 20px 20px;
+        backdrop-filter: blur(40px);
+        margin-bottom: 20px;
+    }
+
+    .menu .submenu-open {
+        
+        position: relative;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        padding: 5px 0;
+        background: #515151;
+        border-radius: 0 0 20px 20px;
+        backdrop-filter: blur(40px);
+        margin-bottom: 20px;
+    }
+  
+    .menu .submenu p {
+        display: none;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .menu .submenu-open p {
+        display: block;
+        padding: 15px 0;
+        text-align: center;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .menu .btn{
+        display: block;
+    }
+}

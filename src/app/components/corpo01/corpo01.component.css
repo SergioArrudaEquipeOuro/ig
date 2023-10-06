@@ -1,0 +1,133 @@
+.leiaut {
+  background: #fff;
+  max-width: 1800px;
+  margin: auto;
+  padding: 100px 0;
+}
+
+.bloco-01 {
+  max-width: 400px;
+  padding: 30px;
+}
+
+.bloco-01 .title p {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, Liberation Sans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+  font-size: 40px;
+  color: #2E2E2E;
+  font-weight: bolder;
+}
+
+.bloco-01 .texto p {
+  font-size: 15px;
+  color: #2E2E2E;
+  margin: 20px 0;
+}
+
+.btn {
+  display: flex;
+}
+
+.btn-register {
+  background: #F7A815;
+  padding: 10px;
+  border-radius: 10px;
+  color: #2E2E2E;
+  margin: 0 20px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn-login {
+  background: #ffffff;
+  border: 1px solid #F7A815;
+  padding: 10px;
+  border-radius: 10px;
+  color: #2E2E2E;
+  margin: 0 20px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+}
+
+.btn-login:hover {
+  background: #F7A815;
+}
+
+.btn-register:hover {
+  background: #ffb732;
+}
+
+.bloco-02 {
+  padding: 100px 0;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-image: url('../../../assets/bk-1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bloco-02 img {
+  max-width: 350px;
+}
+
+
+
+@media (max-width: 768px) {
+  .leiaut {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    background: #222;
+  }
+
+  .bloco-01 {
+    max-width: 100%;
+  }
+
+  .bloco-01 .title p {
+    font-size: 30px;
+    color: #b9b9b9;
+  }
+
+  .bloco-01 .texto p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #919191;
+  }
+
+  .btn-register {
+    margin: 10px 0;
+    width: auto;
+  }
+
+  .bloco-02 img {
+    max-width: 70%;
+    margin-top: 30px;
+  }
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .btn-register {
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .btn-login {
+   width: auto;
+   height: auto;
+   padding: 10px 20px;
+   margin: 20px;
+   font-weight: bolder;
+   background: #222;
+   color: #F7A815;
+   border: none;
+   font-size: 25px;
+  }
+
+}

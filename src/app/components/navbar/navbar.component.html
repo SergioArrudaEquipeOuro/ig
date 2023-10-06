@@ -1,0 +1,44 @@
+<div class="leiaut-container">
+  <div id="container">
+    <div class="menu">
+      <div class="menu-hamburguer" (click)="toggleMenu()">
+        <i class="fas fa-bars icon"></i>
+      </div>
+
+      <div class="bloco logo">
+        <img src="../../../assets/logo-1.svg" alt="" routerLink="/">
+      </div>
+      <div class="menus" [ngClass]="{'menus-on': isMenuOpen, 'active': isMenuOpen}">
+        <div class="menu-item" (click)="toggleSubmenu('informacao')">
+          <p class="menu">About</p>
+          
+        </div>
+        <div class="menu-item" (click)="toggleSubmenu('conhecimento')">
+          <p class="menu">How it Works</p>
+          
+        </div>
+        <div class="menu-item" (click)="toggleSubmenu('operando')">
+          <p class="menu">Assistance</p>
+          
+        </div>
+       <!--  <div class="menu-item" (click)="toggleSubmenu('contato')">
+          <p class="menu">Contato</p>
+          <div class="submenu" [ngClass]="{'submenu-open': isSubmenuOpen === 'contato'}">
+            <p>Submenu Alpha</p>
+            <p>Submenu Beta</p>
+          </div>
+        </div> -->
+        <div class="bloco btn" id="botao">
+          <p>Login</p>
+          
+          <p class="btn-register">Register</p>
+        </div>
+      </div>
+      <!-- <div class="bloco btn" id="botao">
+        <p>Login</p>
+        <div class="divisor"></div>
+        <p>Cadastre-se</p>
+      </div> -->
+    </div>
+  </div>
+</div>

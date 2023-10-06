@@ -1,0 +1,214 @@
+.leiaut {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 30px 0;
+  background: #3d3d3d;
+  max-width: 1800px;
+}
+
+.buttons {
+  margin: auto;
+}
+
+.buttons button {
+  background: transparent;
+  border: none;
+  color: #fcfcfc;
+  padding: 10px 20px;
+  font-weight: bolder;
+  margin: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button.ativo {
+  background: #F7A815;
+  color: #2E2E2E;
+}
+
+.buttons button.ativo:hover,
+.botaoAtivo:hover {
+  color: #ffffff;
+  background: #F7A815
+}
+
+.botaoAtivo {
+  background: #F7A815;
+  border: none;
+  color: #2E2E2E;
+  padding: 10px 20px;
+  font-weight: bolder;
+  margin: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+}
+
+.btns p {
+  color: #fff;
+  cursor: pointer;
+}
+
+.btns p:hover {
+  color: #F7A815;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1800px;
+}
+
+.conteudo {
+  background: #3d3d3d;
+  min-height: 350px;
+  width: auto;
+  margin: auto;
+  padding: 30px;
+}
+
+.leiaut-ativo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.leiaut-ativo .bloco-01 {
+  width: 50%;
+  padding: 30px;
+}
+
+.leiaut-ativo .bloco-01 .title p {
+  font-size: 30px;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+.leiaut-ativo .bloco-01 .texto p {
+  color: #7d7d7d;
+}
+
+.leiaut-ativo .bloco-02 {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leiaut-ativo img {
+  height: 400px;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .conteudo {
+    padding: 0;
+  }
+  .leiaut-ativo .bloco-01 {
+    width: 100%;
+    
+  }
+  .leiaut-ativo .bloco-02 {
+    width: 100%;
+    
+  }
+ 
+  .container {
+    width: 95%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1800px;
+  }
+
+  .leiaut {
+    flex-direction: column;
+    /* Altera a direção da flexbox para empilhar elementos verticalmente */
+    align-items: center;
+    padding: 20px 0;
+    /* Reduz o preenchimento vertical */
+  }
+
+  .buttons {
+    flex-direction: column;
+    /* Empilhar botões verticalmente */
+    text-align: center;
+  }
+
+  .buttons button,
+  .botaoAtivo {
+    width: auto;
+    /* Largura automática para preencher o conteúdo */
+    margin: 10px;
+    /* Adiciona margem vertical entre os botões */
+  }
+
+  .btns {
+    flex-direction: column;
+    /* Empilhar parágrafos verticalmente */
+    align-items: center;
+  }
+
+  .btns p {
+    margin: 5px 0;
+    /* Adiciona margem vertical entre os parágrafos */
+  }
+
+  .container {
+    max-width: 100%;
+    /* Largura máxima de 100% para ocupar a largura total da tela */
+  }
+
+  .conteudo {
+    width: 90%;
+    /* Largura total */
+    border-width: 5px;
+    /* Reduz a largura da borda para caber na tela */
+    margin: 20px auto;
+    /* Adiciona margem vertical entre os conteúdos */
+  }
+
+  .leiaut-ativo {
+    flex-direction: column;
+  }
+
+  .leiaut-ativo .bloco-01 {
+    padding: 20px;
+    /* Reduz o preenchimento interno */
+  }
+
+  .leiaut-ativo .bloco-01 .title p {
+    font-size: 24px;
+    /* Reduz o tamanho da fonte do título */
+  }
+
+  .leiaut-ativo .bloco-01 .texto p {
+    font-size: 12px;
+    /* Reduz o tamanho da fonte do texto */
+    margin: 5px 0;
+    /* Adiciona margem vertical entre os parágrafos */
+  }
+
+  .leiaut-ativo img {
+    max-width: 100%;
+    /* Largura máxima de 100% para imagens */
+    height: auto;
+    /* Altura automática para evitar esticamento da imagem */
+  }
+}

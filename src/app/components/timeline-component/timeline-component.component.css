@@ -1,0 +1,230 @@
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 0;
+}
+
+.timeline-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.timeline-buttons button {
+    background: transparent;
+    border: none;
+    color: #2E2E2E;
+    margin: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    font-size: 20px;
+}
+
+.timeline-buttons button.active {
+    background-color: #F7A815;
+    color: #2e2e2e;
+}
+
+.timeline-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-item {
+    width: 500px;
+}
+
+video {
+    width: 400px;
+    height: 150px;
+}
+
+.traco {
+    height: 2px;
+    width: 100px;
+    background: #2E2E2E;
+}
+
+.content-item .title p {
+    text-align: start;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.content-item .texto p {
+    text-align: start;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-content input {
+    margin: 10px;
+    padding: 10px 20px;
+}
+
+.btn-content button {
+    background-color: #F7A815;
+    border: none;
+    color: #2E2E2E;
+    padding: 10px 20px;
+    border-radius: 0px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn button {
+    background-color: #F7A815;
+    border: none;
+    color: #2E2E2E;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.btn button:hover {
+    background-color: #2E2E2E;
+    color: #F7A815;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding: 50px 0 0 0;
+}
+
+.container2 img {
+    width: 50px;
+}
+
+
+
+
+
+.video {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    height: auto;
+}
+
+.video video {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.video::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .timeline-container {
+        width: 100%;
+    }
+
+    .timeline-buttons {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .timeline-buttons button {
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 10px;
+        background: #979797;
+        border-radius: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        
+    }
+
+    .video {
+        width: 70%;
+    }
+
+    .traco {
+        width: 40px;
+    }
+    .content-item{
+        max-width: 90%;
+        padding: 50px 10px;
+        width: 100%;
+    }
+    .content-item .title p {
+        font-size: 24px;
+        width: 90%;
+        margin-bottom: 20px;
+        margin: auto;
+    }
+
+    .content-item .texto p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 90%;
+    }
+
+    .btn button {
+        font-size: 16px;
+        /* Reduz o tamanho da fonte dos botões */
+        padding: 8px 16px;
+        /* Reduz o preenchimento dos botões */
+    }
+
+    .container2 {
+       flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        padding: 50px 0 0 0;
+    }
+    
+    .container2 img {
+        width: 50px;
+    }
+
+   
+    
+}
