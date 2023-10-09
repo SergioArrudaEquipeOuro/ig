@@ -3,7 +3,7 @@
     <div class="timeline-buttons">
         <button (click)="showContent(1)" [ngClass]="{'active': botaoAtivo === 1}">Welcome</button>
 
-        <button (click)="showContent(2)" [ngClass]="{'active': botaoAtivo === 2}">Fund</button>
+        <button (click)="showContent(2)" [ngClass]="{'active': botaoAtivo === 2}">Register</button>
 
         <button (click)="showContent(3)" [ngClass]="{'active': botaoAtivo === 3}">Invest</button>
 
@@ -26,14 +26,14 @@
                         <input type="email" placeholder="Email adress">
                         <button (click)="register()">Register</button>
                     </div>
-                    <div class="container2">
+                   <!--  <div class="container2">
                         <img src="../../../assets/img05_files/img09.svg" alt="">
                         <img src="../../../assets/img05_files/img10.svg" alt="">
                         <img src="../../../assets/img05_files/img11.svg" alt="">
                         <img src="../../../assets/img05_files/img12.svg" alt="">
                         <img src="../../../assets/img05_files/img13.svg" alt="">
                         <img src="../../../assets/img05_files/img14.svg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </ng-container>
             <ng-container *ngIf="selectedContent === 2">
@@ -79,13 +79,16 @@
             <ng-container *ngIf="selectedContent === 5">
                 <div class="content-item">
                     <div class="title">
-                        <p>5</p>
+                        <p>Suporte</p>
                     </div>
-                    <div class="texto">
-                        <p>Acompanhe seus lucros em tempo real de qualquer luga</p>
+                    <div class="texto texto-suporte">
+                        <p id="info1">Email: support@investingain.com</p>
+                        <p id="info2">EN: +44 7465 766 421</p>
+                        <p id="info3">PT/BR: +55 21 3961-5227</p>
+                        <p id="info4">ES: +34 9354 75 124</p>
                     </div>
                     <div class="btn">
-                        <button>Register</button>
+                        <button>Go chat</button>
                     </div>
                 </div>
             </ng-container>

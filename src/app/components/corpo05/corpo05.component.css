@@ -1,0 +1,13 @@
+.container2 {
+    max-width: 1800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px 0 0 0;
+    background: #ffffff;
+    padding: 20px 0 50px 0;
+}
+
+.container2 img {
+    width: 50px;
+}

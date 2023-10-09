@@ -153,7 +153,14 @@ video {
 }
 
 
-
+#info1,
+#info2,
+#info3,
+#info4{
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 0;
+}
 
 
 

@@ -2,11 +2,13 @@
   display: flex;
   justify-content: center;
   margin: auto;
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   background: #3d3d3d;
   max-width: 1800px;
 }
-
+.yellow{
+  color: #F7A815;
+}
 .buttons {
   margin: auto;
 }
