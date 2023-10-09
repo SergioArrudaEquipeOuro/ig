@@ -66,7 +66,7 @@ video {
 
 .btn {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .btn-content input {
@@ -178,7 +178,7 @@ video {
     .container {
         flex-direction: column;
         max-width: 100%;
-        
+
     }
 
     .video {
@@ -188,11 +188,13 @@ video {
     .traco {
         width: 40px;
     }
-    .content-item{
+
+    .content-item {
         max-width: 90%;
         padding: 50px 10px;
         width: 100%;
     }
+
     .content-item .title p {
         font-size: 24px;
         width: 90%;
@@ -214,17 +216,17 @@ video {
     }
 
     .container2 {
-       flex-wrap: wrap;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         margin: auto;
         padding: 50px 0 0 0;
     }
-    
+
     .container2 img {
         width: 50px;
     }
 
-   
-    
+
+
 }
