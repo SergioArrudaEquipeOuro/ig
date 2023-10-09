@@ -18,4 +18,13 @@ export class Corpo02Component implements OnInit {
     this.selectedContent = contentId;
     this.botaoAtivo = contentId; // Define o botão ativo para o botão clicado
   }
+
+  scrollToCrypto() {
+    // Encontre o elemento com a âncora "crypto" usando JavaScript puro
+    const element = document.getElementById('crypto');
+    if (element) {
+      // Role até o elemento
+      element.scrollIntoView({ behavior: 'smooth' }); // A animação suave é opcional
+    }
+  }
 }

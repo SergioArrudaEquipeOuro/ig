@@ -16,4 +16,12 @@ export class TimelineComponent {
     this.timelinePosition = `${(contentNumber - 1) * buttonWidth}px`;
     this.selectedContent = contentNumber;
   }
+
+  register() {
+    window.location.href = 'https://investingain.com/register';
+  }
+
+  login() {
+    window.location.href = 'https://investingain.com/login';
+  }
 }

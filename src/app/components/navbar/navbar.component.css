@@ -140,6 +140,8 @@
         cursor: pointer;
     }
 
+    
+
     .icon {
         font-size: 30px;
     }
@@ -152,8 +154,10 @@
     }
 
     #botao p {
-        font-size: 25px;
-        padding: 20px 0;
+        font-size: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
     }
 
     .logo {
@@ -170,7 +174,6 @@
         max-height: 0;
         overflow: hidden;
         visibility: hidden;
-        /* Use visibility para ocultar o elemento */
         transition: max-height 0.3s ease, visibility 0s ease 0.3s;
         /* Adicione a transição de visibilidade */
         flex-direction: column;

@@ -3,18 +3,24 @@
     min-height: 200px;
     color: #fff;
 }
+
+.title p{
+    margin-bottom: 30px;
+}
 .container{
     display: flex;
     justify-content: center;
 }
 .divisor{
     margin: 20px 0;
+    display: none;
 }
 .divisor .divisor1{
     height: 2px;
     width: 40px;
     background: #636363;
     margin-bottom: 5px;
+    display: none;
 }
 .divisor .divisor2{
     height: 2px;
@@ -24,15 +30,17 @@
 }
 .box{
     padding: 30px;
-    max-width: 250px;
+    max-width: 200px;
+    width: 200px;
 }
 
-.box2 .texto p{
+.box2 .texto p, a{
     color: #F7A815;
     cursor: pointer;
+    text-decoration: none;
 }
-.box2 .texto p:hover{
-    color: #fea653;
+.box2 .texto a:hover{
+    color: #ffffff;
 }
 .btn button{
     background: #F7A815;
@@ -44,7 +52,13 @@
     margin-top: 20px;
     cursor: pointer;
 }
-
+.click{
+    margin: 5px 0;
+    cursor: pointer;
+}
+.click:hover{
+    color: #F7A815;
+}
 .btn button:hover{
     background: #616161;
     color: #fff;
@@ -68,8 +82,16 @@
 .container2 p{
     text-align: center;
 }
-
-
+.container3{
+    padding: 0 0 20px 0;
+}
+.container3 p{
+    font-size: 12px;
+    color: #616161;
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+}
 
 
 @media (max-width: 800px) {

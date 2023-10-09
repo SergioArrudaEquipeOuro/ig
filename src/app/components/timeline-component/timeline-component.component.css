@@ -122,13 +122,19 @@ video {
 
 
 
-
+.video .bloco-video{
+    background: #e8e8e8;
+    height: 300px;
+    width: 500px;
+    margin: 0 30px;
+}
 
 .video {
     position: relative;
     overflow: hidden;
     width: 50%;
     height: auto;
+    
 }
 
 .video video {

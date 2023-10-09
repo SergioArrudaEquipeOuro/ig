@@ -44,4 +44,12 @@ export class NavbarComponent {
       this.isSubmenuOpen = submenuId;
     }
   }
+
+  register() {
+    window.location.href = 'https://investingain.com/register';
+  }
+
+  login() {
+    window.location.href = 'https://investingain.com/login';
+  }
 }
